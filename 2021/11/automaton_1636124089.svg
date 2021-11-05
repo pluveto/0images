@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="164" height="269" version="1.1" xmlns="http://www.w3.org/2000/svg">
+	<ellipse stroke="black" stroke-width="1" fill="none" cx="32.5" cy="32.5" rx="30" ry="30"/>
+	<text x="27.5" y="38.5" font-family="Times New Roman" font-size="20">A</text>
+	<ellipse stroke="black" stroke-width="1" fill="none" cx="132.5" cy="93.5" rx="30" ry="30"/>
+	<text x="127.5" y="99.5" font-family="Times New Roman" font-size="20">B</text>
+	<ellipse stroke="black" stroke-width="1" fill="none" cx="32.5" cy="158.5" rx="30" ry="30"/>
+	<text x="27.5" y="164.5" font-family="Times New Roman" font-size="20">C</text>
+	<ellipse stroke="black" stroke-width="1" fill="none" cx="125.5" cy="237.5" rx="30" ry="30"/>
+	<text x="120.5" y="243.5" font-family="Times New Roman" font-size="20">D</text>
+	<polygon stroke="black" stroke-width="1" points="32.5,128.5 32.5,62.5"/>
+	<polygon fill="black" stroke-width="1" points="32.5,62.5 27.5,70.5 37.5,70.5"/>
+	<polygon stroke="black" stroke-width="1" points="57.653,142.15 107.347,109.85"/>
+	<polygon fill="black" stroke-width="1" points="107.347,109.85 97.914,110.017 103.364,118.402"/>
+	<polygon stroke="black" stroke-width="1" points="58.111,48.123 106.889,77.877"/>
+	<polygon fill="black" stroke-width="1" points="106.889,77.877 102.663,69.443 97.455,77.98"/>
+	<polygon stroke="black" stroke-width="1" points="102.636,218.078 55.364,177.922"/>
+	<polygon fill="black" stroke-width="1" points="55.364,177.922 58.224,186.912 64.698,179.291"/>
+</svg>
