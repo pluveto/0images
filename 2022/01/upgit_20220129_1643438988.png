@@ -1,0 +1,4 @@
+	b = clipboard.Read(clipboard.FmtText)
+	if b == nil {
+		b = clipboard.Read(clipboard.FmtImage)
+	}
