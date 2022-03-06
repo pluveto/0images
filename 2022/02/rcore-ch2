@@ -1,1 +1,52 @@
-<mxfile host="app.diagrams.net" modified="2022-03-06T14:12:37.638Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.30" version="16.5.3" etag="wLJSg_RLLczaX_GWJSLM" type="github"><diagram id="Q5Hue07RJhZ8jNDBXohA">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-03-06T14:25:25.534Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.30" etag="oMQ4Ft3PcgJW2SzOI80c" version="16.5.3" type="github">
+  <diagram id="Q5Hue07RJhZ8jNDBXohA" name="Page-1">
+    <mxGraphModel dx="2254" dy="1069" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cBxCDZ9iZ5k9g-Uw4UyL-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cBxCDZ9iZ5k9g-Uw4UyL-1" target="cBxCDZ9iZ5k9g-Uw4UyL-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cBxCDZ9iZ5k9g-Uw4UyL-1" value="QEMU&lt;br&gt;PC=0x1000" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cBxCDZ9iZ5k9g-Uw4UyL-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cBxCDZ9iZ5k9g-Uw4UyL-2" target="cBxCDZ9iZ5k9g-Uw4UyL-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cBxCDZ9iZ5k9g-Uw4UyL-2" value="QEMU&lt;br&gt;PC=&lt;span style=&quot;color: rgb(231 , 76 , 60) ; font-family: , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;consolas&amp;#34; , &amp;#34;liberation mono&amp;#34; , &amp;#34;courier new&amp;#34; , &amp;#34;courier&amp;#34; , monospace ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;0x80000000&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cBxCDZ9iZ5k9g-Uw4UyL-5" value="加载到内存&amp;nbsp;&lt;span style=&quot;color: rgb(231 , 76 , 60) ; font-size: 12px ; text-align: left&quot;&gt;0x80000000&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cBxCDZ9iZ5k9g-Uw4UyL-4" target="cBxCDZ9iZ5k9g-Uw4UyL-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cBxCDZ9iZ5k9g-Uw4UyL-4" value="bootloader&lt;br&gt;&lt;span style=&quot;color: rgb(231 , 76 , 60) ; font-family: , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;consolas&amp;#34; , &amp;#34;liberation mono&amp;#34; , &amp;#34;courier new&amp;#34; , &amp;#34;courier&amp;#34; , monospace ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;rustsbi-qemu.bin&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cBxCDZ9iZ5k9g-Uw4UyL-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="cBxCDZ9iZ5k9g-Uw4UyL-6" target="cBxCDZ9iZ5k9g-Uw4UyL-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cBxCDZ9iZ5k9g-Uw4UyL-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="cBxCDZ9iZ5k9g-Uw4UyL-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-320" y="170" as="targetPoint" />
+            <mxPoint x="-280" y="170" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cBxCDZ9iZ5k9g-Uw4UyL-6" value="QEMU&lt;br&gt;开机" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-190" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cBxCDZ9iZ5k9g-Uw4UyL-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cBxCDZ9iZ5k9g-Uw4UyL-9" target="cBxCDZ9iZ5k9g-Uw4UyL-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cBxCDZ9iZ5k9g-Uw4UyL-9" value="RustSBI 初始化，并跳转到&amp;nbsp;&lt;span style=&quot;color: rgb(231 , 76 , 60) ; font-family: , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;consolas&amp;#34; , &amp;#34;liberation mono&amp;#34; , &amp;#34;courier new&amp;#34; , &amp;#34;courier&amp;#34; , monospace ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;0x80200000&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cBxCDZ9iZ5k9g-Uw4UyL-11" value="内核&lt;br&gt;（已经事先加载到&amp;nbsp;&lt;span style=&quot;color: rgb(231 , 76 , 60) ; font-family: , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;consolas&amp;#34; , &amp;#34;liberation mono&amp;#34; , &amp;#34;courier new&amp;#34; , &amp;#34;courier&amp;#34; , monospace ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;0x80200000&lt;/span&gt;&lt;span style=&quot;text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;）&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cBxCDZ9iZ5k9g-Uw4UyL-14" value="注：可以在 bootloader 阶段完成加载，也可以利用 QEMU 加载。我们采用后一种" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=#000000;labelPosition=center;verticalLabelPosition=middle;" vertex="1" parent="1">
+          <mxGeometry x="620" y="60" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
