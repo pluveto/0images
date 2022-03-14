@@ -1,0 +1,10 @@
+﻿[PMC Globals]|None||
+[PMC Code v5.4.1]|F3||1|Window,2,Fast,0,1,Input,-1,-1,1|1|Macro1
+Context=None|
+Groups=Start:1
+1|Left Move & Click|857, 529 Left, 1|1|1000|Click|||||1|
+2|Left Move & Click|2405, 742 Left, 1|1|1000|Click|||||3|
+3|Left Move & Click|1847, 844 Left, 1|1|2000|Click|||||5|
+4|Left Move & Click|2484, 857 Left, 1|1|1000|Click|||||7|
+5|Left Move & Click|1822, 1391 Left, 1|1|1000|Click|||||9|
+
