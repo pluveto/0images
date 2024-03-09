@@ -1,0 +1,618 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1088" height="1240" style="background-color: rgb(32, 34, 43);"><title>electrum-ui</title><g class="smm-container" transform="matrix(1,0,0,1,-873.5,218)"><g class="smm-line-container"><path d="M 956.5,402L 1018.9,402L 1018.9,109.5Q 1018.9,104.5 1023.9,104.5L 1060.5,104.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1132.5,104.5L 1164.9,104.5L 1164.9,-186.5Q 1164.9,-191.5 1169.9,-191.5L 1186.5,-191.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1263.5,-191.5L 1295.9,-191.5L 1295.9,-191.5L 1317.5,-191.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1132.5,104.5L 1164.9,104.5L 1164.9,-94Q 1164.9,-99 1169.9,-99L 1186.5,-99" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1132.5,104.5L 1164.9,104.5L 1164.9,54Q 1164.9,49 1169.9,49L 1186.5,49" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1132.5,104.5L 1164.9,104.5L 1164.9,266Q 1164.9,271 1169.9,271L 1186.5,271" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 956.5,402L 1018.9,402L 1018.9,731.5Q 1018.9,736.5 1023.9,736.5L 1060.5,736.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1174.5,736.5L 1206.9,736.5L 1206.9,482.5Q 1206.9,477.5 1211.9,477.5L 1228.5,477.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1174.5,736.5L 1206.9,736.5L 1206.9,750Q 1206.9,755 1211.9,755L 1228.5,755" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1308.5,755L 1340.9,755L 1340.9,519.5Q 1340.9,514.5 1345.9,514.5L 1362.5,514.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1308.5,755L 1340.9,755L 1340.9,630.5Q 1340.9,625.5 1345.9,625.5L 1362.5,625.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1308.5,755L 1340.9,755L 1340.9,741.5Q 1340.9,736.5 1345.9,736.5L 1362.5,736.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1308.5,755L 1340.9,755L 1340.9,879.5Q 1340.9,884.5 1345.9,884.5L 1362.5,884.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1448.5,884.5L 1480.9,884.5L 1480.9,871Q 1480.9,866 1485.9,866L 1502.5,866" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1448.5,884.5L 1480.9,884.5L 1480.9,990.5Q 1480.9,995.5 1485.9,995.5L 1502.5,995.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1593.5,866L 1625.9,866L 1625.9,778.5Q 1625.9,773.5 1630.9,773.5L 1647.5,773.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1720.5,773.5L 1752.9,773.5L 1752.9,773.5L 1774.5,773.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1749.5,847.5L 1781.9,847.5L 1781.9,847.5L 1803.5,847.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none" opacity="1" style=""></path><path d="M 1593.5,866L 1625.9,866L 1625.9,815.5Q 1625.9,810.5 1630.9,810.5L 1647.5,810.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1593.5,866L 1625.9,866L 1625.9,852.5Q 1625.9,847.5 1630.9,847.5L 1647.5,847.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1593.5,866L 1625.9,866L 1625.9,879.5Q 1625.9,884.5 1630.9,884.5L 1647.5,884.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1593.5,866L 1625.9,866L 1625.9,935Q 1625.9,940 1630.9,940L 1647.5,940" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1748.5,940L 1780.9,940L 1780.9,926.5Q 1780.9,921.5 1785.9,921.5L 1802.5,921.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1748.5,940L 1780.9,940L 1780.9,953.5Q 1780.9,958.5 1785.9,958.5L 1802.5,958.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1250.5,-99L 1282.9,-99L 1282.9,-149.5Q 1282.9,-154.5 1287.9,-154.5L 1304.5,-154.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1250.5,-99L 1282.9,-99L 1282.9,-112.5Q 1282.9,-117.5 1287.9,-117.5L 1304.5,-117.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1250.5,-99L 1282.9,-99L 1282.9,-85.5Q 1282.9,-80.5 1287.9,-80.5L 1304.5,-80.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1250.5,-99L 1282.9,-99L 1282.9,-48.5Q 1282.9,-43.5 1287.9,-43.5L 1304.5,-43.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1377.5,-43.5L 1409.9,-43.5L 1409.9,-43.5L 1431.5,-43.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1268.5,49L 1300.9,49L 1300.9,-1.5Q 1300.9,-6.5 1305.9,-6.5L 1322.5,-6.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1268.5,49L 1300.9,49L 1300.9,35.5Q 1300.9,30.5 1305.9,30.5L 1322.5,30.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1268.5,49L 1300.9,49L 1300.9,62.5Q 1300.9,67.5 1305.9,67.5L 1322.5,67.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1268.5,49L 1300.9,49L 1300.9,99.5Q 1300.9,104.5 1305.9,104.5L 1322.5,104.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1395.5,104.5L 1427.9,104.5L 1427.9,104.5L 1449.5,104.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1277.5,271L 1309.9,271L 1309.9,146.5Q 1309.9,141.5 1314.9,141.5L 1331.5,141.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1421.5,141.5L 1453.9,141.5L 1453.9,141.5L 1475.5,141.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1277.5,271L 1309.9,271L 1309.9,183.5Q 1309.9,178.5 1314.9,178.5L 1331.5,178.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1404.5,178.5L 1436.9,178.5L 1436.9,178.5L 1458.5,178.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1277.5,271L 1309.9,271L 1309.9,303Q 1309.9,308 1314.9,308L 1331.5,308" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1436.5,308L 1468.9,308L 1468.9,308L 1490.5,308" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1575.5,308L 1607.9,308L 1607.9,220.5Q 1607.9,215.5 1612.9,215.5L 1629.5,215.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1575.5,308L 1607.9,308L 1607.9,257.5Q 1607.9,252.5 1612.9,252.5L 1629.5,252.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1575.5,308L 1607.9,308L 1607.9,294.5Q 1607.9,289.5 1612.9,289.5L 1629.5,289.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1575.5,308L 1607.9,308L 1607.9,321.5Q 1607.9,326.5 1612.9,326.5L 1629.5,326.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1575.5,308L 1607.9,308L 1607.9,358.5Q 1607.9,363.5 1612.9,363.5L 1629.5,363.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1575.5,308L 1607.9,308L 1607.9,395.5Q 1607.9,400.5 1612.9,400.5L 1629.5,400.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1575.5,178.5L 1607.9,178.5L 1607.9,178.5L 1629.5,178.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1472.5,625.5L 1504.9,625.5L 1504.9,556.5Q 1504.9,551.5 1509.9,551.5L 1526.5,551.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1472.5,625.5L 1504.9,625.5L 1504.9,593.5Q 1504.9,588.5 1509.9,588.5L 1526.5,588.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1472.5,625.5L 1504.9,625.5L 1504.9,625.5L 1526.5,625.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1472.5,625.5L 1504.9,625.5L 1504.9,657.5Q 1504.9,662.5 1509.9,662.5L 1526.5,662.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1618.5,662.5L 1650.9,662.5L 1650.9,662.5L 1672.5,662.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path><path d="M 1472.5,625.5L 1504.9,625.5L 1504.9,694.5Q 1504.9,699.5 1509.9,699.5L 1526.5,699.5" stroke-dasharray="none" stroke-width="2" stroke="#5a8874" fill="none"></path></g><g class="smm-node-container"><g class="smm-node" transform="matrix(1,0,0,1,883.5,380)" style="cursor: default;"><path d="
+      M5,0
+      L68,0
+      C68,0 73,0 73,5
+      L73,39
+      C73,39 73,44 68,44
+      L5,44
+      C5,44 0,44 0,39
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#01c074" stroke-dasharray="none" stroke-width="0" stroke=""></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="43" data-height="34" data-offsetx="0"><foreignObject width="43" height="34" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><strong style="font-size: 24px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">GUI</strong></p></div><style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  </style></foreignObject></g></g><rect width="77" height="48" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1060.5,87)" style="cursor: default;"><path d="
+      M5,0
+      L67,0
+      C67,0 72,0 72,5
+      L72,30
+      C72,30 72,35 67,35
+      L5,35
+      C5,35 0,35 0,30
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#30333f" stroke-dasharray="none" stroke-width="0" stroke=""></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="42" data-height="25" data-offsetx="0"><foreignObject width="42" height="25" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 18px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Tabs</span></p></div></foreignObject></g></g><rect width="76" height="39" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect><rect fill="transparent" width="20" height="35" x="72" y="0"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1186.5,-208)" style="cursor: default;"><path d="
+      M5,0
+      L72,0
+      C72,0 77,0 77,5
+      L77,28
+      C77,28 77,33 72,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="47" data-height="23" data-offsetx="0"><foreignObject width="47" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255); font-size: 14px;">History</span></p></div></foreignObject></g></g><rect width="81" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect><rect fill="transparent" width="20" height="33" x="77" y="0"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1317.5,-208)" style="cursor: default;"><path d="
+      M5,0
+      L81,0
+      C81,0 86,0 86,5
+      L86,28
+      C86,28 86,33 81,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="56" data-height="23" data-offsetx="0"><foreignObject width="56" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255); font-size: 14px;">ListView</span></p></div></foreignObject></g></g><rect width="90" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1186.5,-115.5)" style="cursor: default;"><path d="
+      M5,0
+      L59,0
+      C59,0 64,0 64,5
+      L64,28
+      C64,28 64,33 59,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="34" data-height="23" data-offsetx="0"><foreignObject width="34" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Send</span></p></div></foreignObject></g></g><rect width="68" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect><rect fill="transparent" width="20" height="33" x="64" y="0"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1304.5,-171)" style="cursor: default;"><path d="
+      M5,0
+      L68,0
+      C68,0 73,0 73,5
+      L73,28
+      C73,28 73,33 68,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="43" data-height="23" data-offsetx="0"><foreignObject width="43" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Pay to</span></p></div></foreignObject></g></g><rect width="77" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1304.5,-134)" style="cursor: default;"><path d="
+      M5,0
+      L100,0
+      C100,0 105,0 105,5
+      L105,28
+      C105,28 105,33 100,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="75" data-height="23" data-offsetx="0"><foreignObject width="75" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Description</span></p></div></foreignObject></g></g><rect width="109" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1304.5,-97)" style="cursor: default;"><path d="
+      M5,0
+      L76,0
+      C76,0 81,0 81,5
+      L81,28
+      C81,28 81,33 76,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="51" data-height="23" data-offsetx="0"><foreignObject width="51" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Amount</span></p></div></foreignObject></g></g><rect width="85" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1304.5,-60)" style="cursor: default;"><path d="
+      M5,0
+      L68,0
+      C68,0 73,0 73,5
+      L73,28
+      C73,28 73,33 68,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="43" data-height="23" data-offsetx="0"><foreignObject width="43" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Action</span></p></div></foreignObject></g></g><rect width="77" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect><rect fill="transparent" width="20" height="33" x="73" y="0"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1431.5,-60)" style="cursor: default;"><path d="
+      M5,0
+      L50,0
+      C50,0 55,0 55,5
+      L55,28
+      C55,28 55,33 50,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="25" data-height="23" data-offsetx="0"><foreignObject width="25" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Pay</span></p></div></foreignObject></g></g><rect width="59" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1186.5,32.5)" style="cursor: default;"><path d="
+      M5,0
+      L77,0
+      C77,0 82,0 82,5
+      L82,28
+      C82,28 82,33 77,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="52" data-height="23" data-offsetx="0"><foreignObject width="52" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Receive</span></p></div></foreignObject></g></g><rect width="86" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect><rect fill="transparent" width="20" height="33" x="82" y="0"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1322.5,-23)" style="cursor: default;"><path d="
+      M5,0
+      L100,0
+      C100,0 105,0 105,5
+      L105,28
+      C105,28 105,33 100,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="75" data-height="23" data-offsetx="0"><foreignObject width="75" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Description</span></p></div></foreignObject></g></g><rect width="109" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1322.5,14)" style="cursor: default;"><path d="
+      M5,0
+      L149,0
+      C149,0 154,0 154,5
+      L154,28
+      C154,28 154,33 149,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="124" data-height="23" data-offsetx="0"><foreignObject width="124" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255); font-size: 14px;">Requested amount</span></p></div></foreignObject></g></g><rect width="158" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1322.5,51)" style="cursor: default;"><path d="
+      M5,0
+      L66,0
+      C66,0 71,0 71,5
+      L71,28
+      C71,28 71,33 66,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="41" data-height="23" data-offsetx="0"><foreignObject width="41" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Expiry</span></p></div></foreignObject></g></g><rect width="75" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1322.5,88)" style="cursor: default;"><path d="
+      M5,0
+      L68,0
+      C68,0 73,0 73,5
+      L73,28
+      C73,28 73,33 68,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="43" data-height="23" data-offsetx="0"><foreignObject width="43" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="color: rgb(255, 255, 255); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">Action</span></p></div></foreignObject></g></g><rect width="77" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect><rect fill="transparent" width="20" height="33" x="73" y="0"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1449.5,88)" style="cursor: default;"><path d="
+      M5,0
+      L128,0
+      C128,0 133,0 133,5
+      L133,28
+      C133,28 133,33 128,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="103" data-height="23" data-offsetx="0"><foreignObject width="103" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Create Request</span></p></div></foreignObject></g></g><rect width="137" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1186.5,254.5)" style="cursor: default;"><path d="
+      M5,0
+      L86,0
+      C86,0 91,0 91,5
+      L91,28
+      C91,28 91,33 86,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="61" data-height="23" data-offsetx="0"><foreignObject width="61" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Channels</span></p></div></foreignObject></g></g><rect width="95" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect><rect fill="transparent" width="20" height="33" x="91" y="0"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1331.5,125)" style="cursor: default;"><path d="
+      M5,0
+      L85,0
+      C85,0 90,0 90,5
+      L90,28
+      C90,28 90,33 85,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="60" data-height="23" data-offsetx="0"><foreignObject width="60" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255); font-size: 14px;">summary</span></p></div></foreignObject></g></g><rect width="94" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect><rect fill="transparent" width="20" height="33" x="90" y="0"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1475.5,125)" style="cursor: default;"><path d="
+      M5,0
+      L290,0
+      C290,0 295,0 295,5
+      L295,28
+      C295,28 295,33 290,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="265" data-height="23" data-offsetx="0"><foreignObject width="265" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Can send N mBTC; can receive N mBTC</span></p></div></foreignObject></g></g><rect width="299" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1331.5,162)" style="cursor: default;"><path d="
+      M5,0
+      L68,0
+      C68,0 73,0 73,5
+      L73,28
+      C73,28 73,33 68,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="43" data-height="23" data-offsetx="0"><foreignObject width="43" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Action</span></p></div></foreignObject></g></g><rect width="77" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect><rect fill="transparent" width="20" height="33" x="73" y="0"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1458.5,162)" style="cursor: default;"><path d="
+      M5,0
+      L112,0
+      C112,0 117,0 117,5
+      L117,28
+      C117,28 117,33 112,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="87" data-height="23" data-offsetx="0"><foreignObject width="87" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">New Channel</span></p></div></foreignObject></g></g><rect width="121" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect><rect fill="transparent" width="20" height="33" x="117" y="0"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1629.5,162)" style="cursor: default;"><path d="
+      M5,0
+      L290,0
+      C290,0 295,0 295,5
+      L295,28
+      C295,28 295,33 290,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="265" data-height="23" data-offsetx="0"><foreignObject width="265" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">need at least 2.mBTC to open a channel</span></p></div></foreignObject></g></g><rect width="299" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1331.5,291.5)" style="cursor: default;"><path d="
+      M5,0
+      L100,0
+      C100,0 105,0 105,5
+      L105,28
+      C105,28 105,33 100,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="75" data-height="23" data-offsetx="0"><foreignObject width="75" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">channel list</span></p></div></foreignObject></g></g><rect width="109" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect><rect fill="transparent" width="20" height="33" x="105" y="0"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1490.5,291.5)" style="cursor: default;"><path d="
+      M5,0
+      L80,0
+      C80,0 85,0 85,5
+      L85,28
+      C85,28 85,33 80,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="55" data-height="23" data-offsetx="0"><foreignObject width="55" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">columns</span></p></div></foreignObject></g></g><rect width="89" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect><rect fill="transparent" width="20" height="33" x="85" y="0"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1629.5,199)" style="cursor: default;"><path d="
+      M5,0
+      L136,0
+      C136,0 141,0 141,5
+      L141,28
+      C141,28 141,33 136,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="111" data-height="23" data-offsetx="0"><foreignObject width="111" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Short Channel ID</span></p></div></foreignObject></g></g><rect width="145" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1629.5,236)" style="cursor: default;"><path d="
+      M5,0
+      L95,0
+      C95,0 100,0 100,5
+      L100,28
+      C100,28 100,33 95,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="70" data-height="23" data-offsetx="0"><foreignObject width="70" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Node alias</span></p></div></foreignObject></g></g><rect width="104" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1629.5,273)" style="cursor: default;"><path d="
+      M5,0
+      L84,0
+      C84,0 89,0 89,5
+      L89,28
+      C89,28 89,33 84,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="59" data-height="23" data-offsetx="0"><foreignObject width="59" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Capacity</span></p></div></foreignObject></g></g><rect width="93" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1629.5,310)" style="cursor: default;"><path d="
+      M5,0
+      L88,0
+      C88,0 93,0 93,5
+      L93,28
+      C93,28 93,33 88,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="63" data-height="23" data-offsetx="0"><foreignObject width="63" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Can send</span></p></div></foreignObject></g></g><rect width="97" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1629.5,347)" style="cursor: default;"><path d="
+      M5,0
+      L103,0
+      C103,0 108,0 108,5
+      L108,28
+      C108,28 108,33 103,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="78" data-height="23" data-offsetx="0"><foreignObject width="78" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Can receive</span></p></div></foreignObject></g></g><rect width="112" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1629.5,384)" style="cursor: default;"><path d="
+      M5,0
+      L68,0
+      C68,0 73,0 73,5
+      L73,28
+      C73,28 73,33 68,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="43" data-height="23" data-offsetx="0"><foreignObject width="43" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Status</span></p></div></foreignObject></g></g><rect width="77" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1060.5,719)" style="cursor: default;"><path d="
+      M5,0
+      L109,0
+      C109,0 114,0 114,5
+      L114,30
+      C114,30 114,35 109,35
+      L5,35
+      C5,35 0,35 0,30
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#30333f" stroke-dasharray="none" stroke-width="0" stroke=""></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="84" data-height="25" data-offsetx="0"><foreignObject width="84" height="25" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 18px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">StatusBar</span></p></div></foreignObject></g></g><rect width="118" height="39" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect><rect fill="transparent" width="20" height="35" x="114" y="0"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1228.5,461)" style="cursor: default;"><path d="
+      M5,0
+      L78,0
+      C78,0 83,0 83,5
+      L83,28
+      C83,28 83,33 78,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="53" data-height="23" data-offsetx="0"><foreignObject width="53" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Balance</span></p></div></foreignObject></g></g><rect width="87" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1228.5,738.5)" style="cursor: default;"><path d="
+      M5,0
+      L75,0
+      C75,0 80,0 80,5
+      L80,28
+      C80,28 80,33 75,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="50" data-height="23" data-offsetx="0"><foreignObject width="50" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Actions</span></p></div></foreignObject></g></g><rect width="84" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect><rect fill="transparent" width="20" height="33" x="80" y="0"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1362.5,498)" style="cursor: default;"><path d="
+      M5,0
+      L90,0
+      C90,0 95,0 95,5
+      L95,28
+      C95,28 95,33 90,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="65" data-height="23" data-offsetx="0"><foreignObject width="65" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Password</span></p></div></foreignObject></g></g><rect width="99" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1362.5,609)" style="cursor: default;"><path d="
+      M5,0
+      L105,0
+      C105,0 110,0 110,5
+      L110,28
+      C110,28 110,33 105,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="80" data-height="23" data-offsetx="0"><foreignObject width="80" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Preferences</span></p></div></foreignObject></g></g><rect width="114" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect><rect fill="transparent" width="20" height="33" x="110" y="0"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1526.5,535)" style="cursor: default;"><path d="
+      M5,0
+      L104,0
+      C104,0 109,0 109,5
+      L109,28
+      C109,28 109,33 104,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="79" data-height="23" data-offsetx="0"><foreignObject width="79" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Appearance</span></p></div></foreignObject></g></g><rect width="113" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1526.5,572)" style="cursor: default;"><path d="
+      M5,0
+      L60,0
+      C60,0 65,0 65,5
+      L65,28
+      C65,28 65,33 60,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="35" data-height="23" data-offsetx="0"><foreignObject width="35" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Units</span></p></div></foreignObject></g></g><rect width="69" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1526.5,609)" style="cursor: default;"><path d="
+      M5,0
+      L51,0
+      C51,0 56,0 56,5
+      L56,28
+      C56,28 56,33 51,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="26" data-height="23" data-offsetx="0"><foreignObject width="26" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Fiat</span></p></div></foreignObject></g></g><rect width="60" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1526.5,646)" style="cursor: default;"><path d="
+      M5,0
+      L87,0
+      C87,0 92,0 92,5
+      L92,28
+      C92,28 92,33 87,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="62" data-height="23" data-offsetx="0"><foreignObject width="62" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Lightning</span></p></div></foreignObject></g></g><rect width="96" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect><rect fill="transparent" width="20" height="33" x="92" y="0"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1672.5,646)" style="cursor: default;"><path d="
+      M5,0
+      L175,0
+      C175,0 180,0 180,5
+      L180,28
+      C180,28 180,33 175,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="150" data-height="23" data-offsetx="0"><foreignObject width="150" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255); font-size: 14px;">Use trampoline routing</span></p></div></foreignObject></g></g><rect width="184" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1526.5,683)" style="cursor: default;"><path d="
+      M5,0
+      L57,0
+      C57,0 62,0 62,5
+      L62,28
+      C62,28 62,33 57,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="32" data-height="23" data-offsetx="0"><foreignObject width="32" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Misc</span></p></div></foreignObject></g></g><rect width="66" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1362.5,720)" style="cursor: default;"><path d="
+      M5,0
+      L59,0
+      C59,0 64,0 64,5
+      L64,28
+      C64,28 64,33 59,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="34" data-height="23" data-offsetx="0"><foreignObject width="34" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Seed</span></p></div></foreignObject></g></g><rect width="68" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1362.5,868)" style="cursor: default;"><path d="
+      M5,0
+      L81,0
+      C81,0 86,0 86,5
+      L86,28
+      C86,28 86,33 81,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="56" data-height="23" data-offsetx="0"><foreignObject width="56" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Network</span></p></div></foreignObject></g></g><rect width="90" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect><rect fill="transparent" width="20" height="33" x="86" y="0"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1502.5,849.5)" style="cursor: default;"><path d="
+      M5,0
+      L86,0
+      C86,0 91,0 91,5
+      L91,28
+      C91,28 91,33 86,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="61" data-height="23" data-offsetx="0"><foreignObject width="61" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Overview</span></p></div></foreignObject></g></g><rect width="95" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect><rect fill="transparent" width="20" height="33" x="91" y="0"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1647.5,757)" style="cursor: default;"><path d="
+      M5,0
+      L68,0
+      C68,0 73,0 73,5
+      L73,28
+      C73,28 73,33 68,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="43" data-height="23" data-offsetx="0"><foreignObject width="43" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="color: rgb(255, 255, 255); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">Status</span></p></div></foreignObject></g></g><rect width="77" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect><rect fill="transparent" width="20" height="33" x="73" y="0"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1774.5,757)" style="cursor: default;"><path d="
+      M5,0
+      L172,0
+      C172,0 177,0 177,5
+      L177,28
+      C177,28 177,33 172,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="147" data-height="23" data-offsetx="0"><foreignObject width="147" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Connected to X nodes</span></p></div></foreignObject></g></g><rect width="181" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1647.5,794)" style="cursor: default;" opacity="1"><path d="
+      M5,0
+      L68,0
+      C68,0 73,0 73,5
+      L73,28
+      C73,28 73,33 68,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="43" data-height="23" data-offsetx="0"><foreignObject width="43" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Server</span></p></div></foreignObject></g></g><rect width="77" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1647.5,831)" style="cursor: default;" opacity="1"><path d="
+      M5,0
+      L97,0
+      C97,0 102,0 102,5
+      L102,28
+      C102,28 102,33 97,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="72" data-height="23" data-offsetx="0"><foreignObject width="72" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="color: rgb(255, 255, 255); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">Blockchain</span></p></div></foreignObject></g></g><rect width="106" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect><rect fill="transparent" width="20" height="33" x="102" y="0"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1803.5,831)" style="cursor: default;" opacity="1"><path d="
+      M5,0
+      L83,0
+      C83,0 88,0 88,5
+      L88,28
+      C88,28 88,33 83,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="58" data-height="23" data-offsetx="0"><foreignObject width="58" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255); font-size: 14px;">N blocks</span></p></div></foreignObject></g></g><rect width="92" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1647.5,868)" style="cursor: default;" opacity="1"><path d="
+      M5,0
+      L202,0
+      C202,0 207,0 207,5
+      L207,28
+      C207,28 207,33 202,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="177" data-height="23" data-offsetx="0"><foreignObject width="177" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Select server automatically</span></p></div></foreignObject></g></g><rect width="211" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1647.5,923.5)" style="cursor: default;"><path d="
+      M5,0
+      L96,0
+      C96,0 101,0 101,5
+      L101,28
+      C101,28 101,33 96,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="71" data-height="23" data-offsetx="0"><foreignObject width="71" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255); font-size: 14px;">Server List</span></p></div></foreignObject></g></g><rect width="105" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect><rect fill="transparent" width="20" height="33" x="101" y="0"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1802.5,905)" style="cursor: default;"><path d="
+      M5,0
+      L68,0
+      C68,0 73,0 73,5
+      L73,28
+      C73,28 73,33 68,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="43" data-height="23" data-offsetx="0"><foreignObject width="43" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="color: rgb(255, 255, 255); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">Server</span></p></div></foreignObject></g></g><rect width="77" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1802.5,942)" style="cursor: default;"><path d="
+      M5,0
+      L69,0
+      C69,0 74,0 74,5
+      L74,28
+      C74,28 74,33 69,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="44" data-height="23" data-offsetx="0"><foreignObject width="44" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Height</span></p></div></foreignObject></g></g><rect width="78" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1502.5,979)" style="cursor: default;"><path d="
+      M5,0
+      L63,0
+      C63,0 68,0 68,5
+      L68,28
+      C68,28 68,33 63,33
+      L5,33
+      C5,33 0,33 0,28
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="38" data-height="23" data-offsetx="0"><foreignObject width="38" height="23" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(255, 255, 255);">Proxy</span></p></div></foreignObject></g></g><rect width="72" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g></g><g class="smm-associative-line-container"></g><g class="smm-other-container"></g></g><defs><marker markerWidth="10" markerHeight="10" refX="12" refY="5" viewBox="0 0 20 20" orient="auto-start-reverse"><path d="M0,0 L2,5 L0,10 L10,5 Z"></path></marker></defs><style>
+  /* 鼠标hover和激活时渲染的矩形 */
+  .smm-hover-node{
+    display: none;
+    opacity: 0.6;
+    stroke-width: 1;
+  }
+
+  .smm-node:not(.smm-node-dragging):hover .smm-hover-node{
+    display: block;
+  }
+
+  .smm-node.active .smm-hover-node{
+    display: block;
+    opacity: 1;
+    stroke-width: 2;
+  }
+</style></svg>
