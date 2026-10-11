@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1774.921583333333 1260.4" width="1774.921583333333" height="1260.4" style="--bg:#fcfcfc;--fg:#0a0a0a;--line:#808080;--accent:#2364e1;--muted:#5c5c5c;--surface:#f5f5f5;--border:#d6d6d6">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Google%20Sans:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Google Sans', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<g class="subgraph" data-id="Tooling" data-label="外部工具 / Web 端 (WASM / CLI)">
+  <rect x="1243.4925833333332" y="831" width="491.429" height="113.80000000000001" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="1243.4925833333332" y="831" width="491.429" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="1255.4925833333332" y="845" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">外部工具 / Web 端 (WASM / CLI)</text>
+</g>
+<g class="subgraph" data-id="Hosts" data-label="宿主层 (Hosts)">
+  <rect x="695.0659999999999" y="519.4000000000001" width="530.702" height="113.80000000000001" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="695.0659999999999" y="519.4000000000001" width="530.702" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="707.0659999999999" y="533.4000000000001" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">宿主层 (Hosts)</text>
+</g>
+<g class="subgraph" data-id="Mod_Implementations" data-label="官方本体与社区 Mod 实现 (Mods)">
+  <rect x="40" y="40" width="990.0449999999998" height="215.60000000000002" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="40" y="40" width="990.0449999999998" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="52" y="54" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">官方本体与社区 Mod 实现 (Mods)</text>
+</g>
+<g class="subgraph" data-id="Mod_APIs" data-label="Mod 接口契约层 (Mod APIs)">
+  <rect x="451.11749999999995" y="315.6" width="458.084" height="149.8" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="451.11749999999995" y="315.6" width="458.084" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="463.11749999999995" y="329.6" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Mod 接口契约层 (Mod APIs)</text>
+</g>
+<g class="subgraph" data-id="Engine_Layer" data-label="引擎基础设施 (Engine Runtime)">
+  <rect x="541.4984999999999" y="693.2" width="673.9940833333333" height="251.60000000000002" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="541.4984999999999" y="693.2" width="673.9940833333333" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="553.4984999999999" y="707.2" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">引擎基础设施 (Engine Runtime)</text>
+</g>
+<g class="subgraph" data-id="Leaf_Layer" data-label="纯数据与数学叶子库 (Zero Dependencies)">
+  <rect x="1007.6924583333332" y="1004.8000000000001" width="463.21624999999995" height="215.60000000000002" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="1007.6924583333332" y="1004.8000000000001" width="463.21624999999995" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="1019.6924583333332" y="1018.8000000000001" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">纯数据与数学叶子库 (Zero Dependencies)</text>
+</g>
+<polyline class="edge" data-from="WebSeedTool" data-to="WorldData" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1598.2820833333333,928.8 1598.2820833333333,988.8000000000001 1283.140208333333,988.8000000000001 1283.140208333333,1048.8000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="CLIConverter" data-to="WorldData" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1354.5675833333332,928.8 1354.5675833333332,988.8000000000001 1283.140208333333,988.8000000000001 1283.140208333333,1048.8000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="CoreAPI" data-to="Primitives" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="691.1054999999999,928.8 691.1054999999999,1126.6000000000001 1191.7559583333332,1126.6000000000001 1191.7559583333332,1150.6000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="CoreEngine" data-to="WorldData" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1052.5475833333333,827 1052.5475833333333,851 1283.140208333333,851 1283.140208333333,1048.8000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ApiCircuits" data-to="CoreAPI" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="564.045,449.40000000000003 564.045,851 691.1054999999999,851 691.1054999999999,875" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ApiInventory" data-to="CoreAPI" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="791.087,449.40000000000003 791.087,851 691.1054999999999,851 691.1054999999999,875" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ModGameplay" data-to="CoreAPI" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="167.7475,239.60000000000002 167.7475,851 691.1054999999999,851 691.1054999999999,875" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ModInventory" data-to="ApiInventory" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="900.4449999999999,239.60000000000002 900.4449999999999,297.6 842.14425,297.6 842.1442499999998,395.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ModCircuits" data-to="ApiCircuits" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="434.0625,239.60000000000002 434.0625,297.6 515.58125,297.6 515.58125,395.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ModVanilla" data-to="ApiInventory" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="548.7299999999999,137.8 548.7299999999999,161.8 791.087,161.8 791.087,395.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ModVanilla" data-to="ApiCircuits" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="548.7299999999999,137.8 548.7299999999999,161.8 564.045,161.8 564.045,395.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="CommunityMod" data-to="ApiCircuits" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="676.7374999999998,239.60000000000002 676.7374999999998,303.6 564.045,303.6 564.045,395.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="CommunityMod" data-to="ApiInventory" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="676.7374999999998,239.60000000000002 676.7374999999998,303.6 791.087,303.6 791.087,395.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="GodotShell" data-to="CoreEngine" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="859.4929999999999,617.2 859.4929999999999,681.2 1052.5475833333333,681.2 1052.5475833333333,773.2" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="GodotShell" data-to="ModLoader" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="859.4929999999999,617.2 859.4929999999999,681.2 771.7830833333333,681.2 771.7830833333333,773.2" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="HeadlessServer" data-to="CoreEngine" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1122.844,617.2 1122.844,681.2 1052.5475833333333,681.2 1052.5475833333333,773.2" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="HeadlessServer" data-to="ModLoader" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1122.844,617.2 1122.844,681.2 771.7830833333333,681.2 771.7830833333333,773.2" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ModVanilla" data-to="ModGameplay" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="548.7299999999999,137.8 548.7299999999999,161.8 167.7475,161.8 167.7475,185.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="CoreEngine" data-to="CoreAPI" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1052.5475833333333,827 1052.5475833333333,851 691.1054999999999,851 691.1054999999999,875" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ModLoader" data-to="CoreAPI" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="771.7830833333333,827 771.7830833333333,851 691.1054999999999,851 691.1054999999999,875" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="WorldData" data-to="Primitives" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1283.140208333333,1102.6000000000001 1283.140208333333,1126.6000000000001 1191.7559583333332,1126.6000000000001 1191.7559583333332,1150.6000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="node" data-id="WebSeedTool" data-label="&lt;b&gt;WebSeedAnalyzer&lt;/b&gt;
+(Blazor/Wasm 网页种子分析器)" data-shape="rectangle">
+  <rect x="1477.6425833333333" y="875" width="241.27899999999997" height="53.800000000000004" rx="0" ry="0" fill="#E74C3C" stroke="#fff" stroke-width="2px" />
+  <text x="1598.2820833333333" y="901.9" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="1598.2820833333333" dy="-3.9000000000000012"><tspan font-weight="bold">WebSeedAnalyzer</tspan></tspan><tspan x="1598.2820833333333" dy="16.900000000000002">(Blazor/Wasm 网页种子分析器)</tspan></text>
+</g>
+<g class="node" data-id="CLIConverter" data-label="&lt;b&gt;SaveConverter&lt;/b&gt;
+(命令行存档转换工具)" data-shape="rectangle">
+  <rect x="1259.4925833333332" y="875" width="190.14999999999998" height="53.800000000000004" rx="0" ry="0" fill="#E74C3C" stroke="#fff" stroke-width="2px" />
+  <text x="1354.5675833333332" y="901.9" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="1354.5675833333332" dy="-3.9000000000000012"><tspan font-weight="bold">SaveConverter</tspan></tspan><tspan x="1354.5675833333332" dy="16.900000000000002">(命令行存档转换工具)</tspan></text>
+</g>
+<g class="node" data-id="GodotShell" data-label="&lt;b&gt;Voxel.Godot.Shell&lt;/b&gt;
+(表现层：RenderingServer / 音频 / 输入)" data-shape="rectangle">
+  <rect x="711.0659999999999" y="563.4000000000001" width="296.854" height="53.800000000000004" rx="0" ry="0" fill="#478CBF" stroke="#fff" stroke-width="2px" />
+  <text x="859.4929999999999" y="590.3000000000001" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="859.4929999999999" dy="-3.9000000000000012"><tspan font-weight="bold">Voxel.Godot.Shell</tspan></tspan><tspan x="859.4929999999999" dy="16.900000000000002">(表现层：RenderingServer / 音频 / 输入)</tspan></text>
+</g>
+<g class="node" data-id="HeadlessServer" data-label="&lt;b&gt;Voxel.Server.Console&lt;/b&gt;
+(专属无头服务器)" data-shape="rectangle">
+  <rect x="1035.92" y="563.4000000000001" width="173.84799999999998" height="53.800000000000004" rx="0" ry="0" fill="#478CBF" stroke="#fff" stroke-width="2px" />
+  <text x="1122.844" y="590.3000000000001" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="1122.844" dy="-3.9000000000000012"><tspan font-weight="bold">Voxel.Server.Console</tspan></tspan><tspan x="1122.844" dy="16.900000000000002">(专属无头服务器)</tspan></text>
+</g>
+<g class="node" data-id="ModVanilla" data-label="&lt;b&gt;Mod.Vanilla.Content&lt;/b&gt;
+(石头/泥土/木头方块、配方)" data-shape="rectangle">
+  <rect x="435.12999999999994" y="84" width="227.19999999999996" height="53.800000000000004" rx="0" ry="0" fill="#D35400" stroke="#fff" stroke-width="2px" />
+  <text x="548.7299999999999" y="110.9" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="548.7299999999999" dy="-3.9000000000000012"><tspan font-weight="bold">Mod.Vanilla.Content</tspan></tspan><tspan x="548.7299999999999" dy="16.900000000000002">(石头/泥土/木头方块、配方)</tspan></text>
+</g>
+<g class="node" data-id="ModCircuits" data-label="&lt;b&gt;Mod.Circuits.Core&lt;/b&gt;
+(数字电路模拟器/信号传播系统)" data-shape="rectangle">
+  <rect x="307.495" y="185.8" width="253.13499999999996" height="53.800000000000004" rx="0" ry="0" fill="#D35400" stroke="#fff" stroke-width="2px" />
+  <text x="434.0625" y="212.70000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="434.0625" dy="-3.9000000000000012"><tspan font-weight="bold">Mod.Circuits.Core</tspan></tspan><tspan x="434.0625" dy="16.900000000000002">(数字电路模拟器/信号传播系统)</tspan></text>
+</g>
+<g class="node" data-id="ModInventory" data-label="&lt;b&gt;Mod.Inventory.Core&lt;/b&gt;
+(容器/掉落物/背包堆叠系统)" data-shape="rectangle">
+  <rect x="786.8449999999998" y="185.8" width="227.19999999999996" height="53.800000000000004" rx="0" ry="0" fill="#D35400" stroke="#fff" stroke-width="2px" />
+  <text x="900.4449999999998" y="212.70000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="900.4449999999998" dy="-3.9000000000000012"><tspan font-weight="bold">Mod.Inventory.Core</tspan></tspan><tspan x="900.4449999999998" dy="16.900000000000002">(容器/掉落物/背包堆叠系统)</tspan></text>
+</g>
+<g class="node" data-id="ModGameplay" data-label="&lt;b&gt;Mod.Gameplay&lt;/b&gt;
+(物理移动/破坏进度状态机)" data-shape="rectangle">
+  <rect x="56" y="185.8" width="223.49499999999998" height="53.800000000000004" rx="0" ry="0" fill="#D35400" stroke="#fff" stroke-width="2px" />
+  <text x="167.7475" y="212.70000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="167.7475" dy="-3.9000000000000012"><tspan font-weight="bold">Mod.Gameplay</tspan></tspan><tspan x="167.7475" dy="16.900000000000002">(物理移动/破坏进度状态机)</tspan></text>
+</g>
+<g class="node" data-id="CommunityMod" data-label="&lt;b&gt;Community.TechMod&lt;/b&gt;
+(第三方科技Mod)" data-shape="rectangle">
+  <rect x="594.6299999999999" y="185.8" width="164.21499999999997" height="53.800000000000004" rx="0" ry="0" fill="#D35400" stroke="#fff" stroke-width="2px" />
+  <text x="676.7374999999998" y="212.70000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="676.7374999999998" dy="-3.9000000000000012"><tspan font-weight="bold">Community.TechMod</tspan></tspan><tspan x="676.7374999999998" dy="16.900000000000002">(第三方科技Mod)</tspan></text>
+</g>
+<g class="node" data-id="ApiCircuits" data-label="&lt;b&gt;Mod.Circuits.API&lt;/b&gt;
+(ICircuitNode, 信号接口)" data-shape="rectangle">
+  <rect x="467.11749999999995" y="395.6" width="193.855" height="53.800000000000004" rx="0" ry="0" fill="#F39C12" stroke="#fff" stroke-width="2px" />
+  <text x="564.045" y="422.5" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="564.045" dy="-3.9000000000000012"><tspan font-weight="bold">Mod.Circuits.API</tspan></tspan><tspan x="564.045" dy="16.900000000000002">(ICircuitNode, 信号接口)</tspan></text>
+</g>
+<g class="node" data-id="ApiInventory" data-label="&lt;b&gt;Mod.Inventory.API&lt;/b&gt;
+(IItemContainer, 槽位定义)" data-shape="rectangle">
+  <rect x="688.9725" y="395.6" width="204.229" height="53.800000000000004" rx="0" ry="0" fill="#F39C12" stroke="#fff" stroke-width="2px" />
+  <text x="791.087" y="422.5" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="791.087" dy="-3.9000000000000012"><tspan font-weight="bold">Mod.Inventory.API</tspan></tspan><tspan x="791.087" dy="16.900000000000002">(IItemContainer, 槽位定义)</tspan></text>
+</g>
+<g class="node" data-id="CoreEngine" data-label="&lt;b&gt;Voxel.Engine&lt;/b&gt;
+(ECS World / Chunk存储 / 贪婪网格算法)" data-shape="rectangle">
+  <rect x="905.6025833333333" y="773.2" width="293.89" height="53.800000000000004" rx="0" ry="0" fill="#27AE60" stroke="#fff" stroke-width="2px" />
+  <text x="1052.5475833333333" y="800.1" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="1052.5475833333333" dy="-3.9000000000000012"><tspan font-weight="bold">Voxel.Engine</tspan></tspan><tspan x="1052.5475833333333" dy="16.900000000000002">(ECS World / Chunk存储 / 贪婪网格算法)</tspan></text>
+</g>
+<g class="node" data-id="ModLoader" data-label="&lt;b&gt;Voxel.Modding.Loader&lt;/b&gt;
+(DAG 依赖解析 / ALC 加载)" data-shape="rectangle">
+  <rect x="665.9635833333332" y="773.2" width="211.639" height="53.800000000000004" rx="0" ry="0" fill="#27AE60" stroke="#fff" stroke-width="2px" />
+  <text x="771.7830833333333" y="800.1" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="771.7830833333333" dy="-3.9000000000000012"><tspan font-weight="bold">Voxel.Modding.Loader</tspan></tspan><tspan x="771.7830833333333" dy="16.900000000000002">(DAG 依赖解析 / ALC 加载)</tspan></text>
+</g>
+<g class="node" data-id="CoreAPI" data-label="&lt;b&gt;Voxel.Core.API&lt;/b&gt;
+(IMod 接口 / 基础注册表 / 事件总线)" data-shape="rectangle">
+  <rect x="557.4984999999999" y="875" width="267.214" height="53.800000000000004" rx="0" ry="0" fill="#27AE60" stroke="#fff" stroke-width="2px" />
+  <text x="691.1054999999999" y="901.9" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="691.1054999999999" dy="-3.9000000000000012"><tspan font-weight="bold">Voxel.Core.API</tspan></tspan><tspan x="691.1054999999999" dy="16.900000000000002">(IMod 接口 / 基础注册表 / 事件总线)</tspan></text>
+</g>
+<g class="node" data-id="WorldData" data-label="&lt;b&gt;Voxel.Data.World&lt;/b&gt;
+(纯数据：种子生成算法/噪声/Chunk格式/压缩)" data-shape="rectangle">
+  <rect x="1111.3717083333331" y="1048.8000000000002" width="343.537" height="53.800000000000004" rx="0" ry="0" fill="#8E44AD" stroke="#fff" stroke-width="2px" />
+  <text x="1283.140208333333" y="1075.7000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="1283.140208333333" dy="-3.9000000000000012"><tspan font-weight="bold">Voxel.Data.World</tspan></tspan><tspan x="1283.140208333333" dy="16.900000000000002">(纯数据：种子生成算法/噪声/Chunk格式/压缩)</tspan></text>
+</g>
+<g class="node" data-id="Primitives" data-label="&lt;b&gt;Voxel.Primitives&lt;/b&gt;
+(数学与基元：Vector3i, AABB, 方向, 紧凑顶点)" data-shape="rectangle">
+  <rect x="1023.6924583333332" y="1150.6000000000001" width="336.1269999999999" height="53.800000000000004" rx="0" ry="0" fill="#8E44AD" stroke="#fff" stroke-width="2px" />
+  <text x="1191.7559583333332" y="1177.5000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="1191.7559583333332" dy="-3.9000000000000012"><tspan font-weight="bold">Voxel.Primitives</tspan></tspan><tspan x="1191.7559583333332" dy="16.900000000000002">(数学与基元：Vector3i, AABB, 方向, 紧凑顶点)</tspan></text>
+</g>
+</svg>
