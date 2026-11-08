@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="374.4pt" height="302.4pt" viewBox="0 0 374.4 302.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-08T13:08:45.699466</dc:date>
+    <dc:description>import numpy as np
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+from matplotlib.patches import FancyArrowPatch
+
+mpl.rcParams.update({
+    "font.family": "DejaVu Sans",
+    "mathtext.fontset": "dejavusans",
+    "font.size": 12,
+    "figure.facecolor": "white",
+    "axes.facecolor": "white",
+    "text.color": "#1a202c",
+    "svg.fonttype": "none",
+})
+
+# Dimensionless Cartesian coordinates; all endpoints are specified by the prompt.
+origin = np.array([0.0, 0.0])
+e1 = np.array([1.0, 0.0])
+e2 = np.array([0.0, 1.0])
+v = 2 * e1 + 3 * e2
+
+blue = "#2b6cb0"
+orange = "#dd6b20"
+ink = "#1a202c"
+guide = "#94a3b0"
+
+fig = plt.figure(figsize=(5.2, 4.2), dpi=100)
+ax = fig.add_axes([0.09, 0.09, 0.82, 0.86])
+ax.set_aspect("equal", adjustable="box")
+ax.set_xlim(-0.65, 2.65)
+ax.set_ylim(-0.48, 3.65)
+
+ax.set_xticks(np.arange(0, 3, 1))
+ax.set_yticks(np.arange(0, 4, 1))
+ax.grid(True, color="#e6ebef", linewidth=0.7, zorder=0)
+ax.tick_params(
+    axis="both", which="both",
+    bottom=False, left=False, labelbottom=False, labelleft=False
+)
+for spine in ax.spines.values():
+    spine.set_visible(False)
+
+# Parallelogram construction.
+ax.plot([2, 2], [0, 3], color=guide, linewidth=1.1,
+        linestyle=(0, (4, 4)), zorder=1)
+ax.plot([0, 2], [3, 3], color=guide, linewidth=1.1,
+        linestyle=(0, (4, 4)), zorder=1)
+
+
+def arrow(endpoint, color, linewidth, dashed=False, zorder=3):
+    patch = FancyArrowPatch(
+        posA=origin,
+        posB=endpoint,
+        arrowstyle="-|&gt;",
+        mutation_scale=13 if linewidth &lt; 2.5 else 16,
+        linewidth=linewidth,
+        color=color,
+        linestyle=(0, (4, 3)) if dashed else "-",
+        shrinkA=0,
+        shrinkB=0,
+        capstyle="round",
+        joinstyle="round",
+        zorder=zorder,
+    )
+    ax.add_patch(patch)
+
+
+# Dashed scaled vectors remain visible beyond the solid unit vectors.
+arrow(2 * e1, blue, 1.9, dashed=True, zorder=3)
+arrow(3 * e2, orange, 1.9, dashed=True, zorder=3)
+arrow(e1, blue, 2.0, zorder=4)
+arrow(e2, orange, 2.0, zorder=4)
+arrow(v, ink, 2.8, zorder=5)
+
+ax.text(-0.12, -0.12, r"$O$", ha="right", va="top", fontsize=13)
+ax.text(0.55, -0.17, r"$\vec{e}_1$", color=blue,
+        ha="center", va="top", fontsize=13)
+ax.text(1.76, -0.17, r"$2\vec{e}_1$", color=blue,
+        ha="center", va="top", fontsize=13)
+ax.text(-0.15, 0.53, r"$\vec{e}_2$", color=orange,
+        ha="right", va="center", fontsize=13)
+ax.text(-0.15, 2.16, r"$3\vec{e}_2$", color=orange,
+        ha="right", va="center", fontsize=13)
+ax.text(1.0, 3.33, r"$\vec{v}=2\vec{e}_1+3\vec{e}_2$",
+        color=ink, ha="center", va="bottom", fontsize=14)</dc:description>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>dendron</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 302.4 
+L 374.4 302.4 
+L 374.4 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 83.300339 275.184 
+L 291.099661 275.184 
+L 291.099661 15.12 
+L 83.300339 15.12 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 250.169492 244.958644 
+L 250.169492 56.050169 
+" clip-path="url(#pe2c4134056)" style="fill: none; stroke-dasharray: 4.4,4.4; stroke-dashoffset: 0; stroke: #94a3b0; stroke-width: 1.1"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 124.230508 56.050169 
+L 250.169492 56.050169 
+" clip-path="url(#pe2c4134056)" style="fill: none; stroke-dasharray: 4.4,4.4; stroke-dashoffset: 0; stroke: #94a3b0; stroke-width: 1.1"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_3">
+      <path d="M 124.230508 275.184 
+L 124.230508 15.12 
+" clip-path="url(#pe2c4134056)" style="fill: none; stroke: #e6ebef; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_4">
+      <path d="M 187.2 275.184 
+L 187.2 15.12 
+" clip-path="url(#pe2c4134056)" style="fill: none; stroke: #e6ebef; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 250.169492 275.184 
+L 250.169492 15.12 
+" clip-path="url(#pe2c4134056)" style="fill: none; stroke: #e6ebef; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_6">
+      <path d="M 83.300339 244.958644 
+L 291.099661 244.958644 
+" clip-path="url(#pe2c4134056)" style="fill: none; stroke: #e6ebef; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_7">
+      <path d="M 83.300339 181.989153 
+L 291.099661 181.989153 
+" clip-path="url(#pe2c4134056)" style="fill: none; stroke: #e6ebef; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_8">
+      <path d="M 83.300339 119.019661 
+L 291.099661 119.019661 
+" clip-path="url(#pe2c4134056)" style="fill: none; stroke: #e6ebef; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_9">
+      <path d="M 83.300339 56.050169 
+L 291.099661 56.050169 
+" clip-path="url(#pe2c4134056)" style="fill: none; stroke: #e6ebef; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 124.230508 244.958644 
+Q 187.2 244.958644 248.045227 244.958644 
+" clip-path="url(#pe2c4134056)" style="fill: none; stroke-dasharray: 7.6,5.7; stroke-dashoffset: 0; stroke: #2b6cb0; stroke-width: 1.9; stroke-linecap: round"/>
+    <path d="M 242.845227 242.358644 
+L 248.045227 244.958644 
+L 242.845227 247.558644 
+z
+" clip-path="url(#pe2c4134056)" style="fill: #2b6cb0; stroke-dasharray: 7.6,5.7; stroke-dashoffset: 0; stroke: #2b6cb0; stroke-width: 1.9; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 124.230508 244.958644 
+Q 124.230508 150.504407 124.230508 58.174434 
+" clip-path="url(#pe2c4134056)" style="fill: none; stroke-dasharray: 7.6,5.7; stroke-dashoffset: 0; stroke: #dd6b20; stroke-width: 1.9; stroke-linecap: round"/>
+    <path d="M 121.630508 63.374434 
+L 124.230508 58.174434 
+L 126.830508 63.374434 
+z
+" clip-path="url(#pe2c4134056)" style="fill: #dd6b20; stroke-dasharray: 7.6,5.7; stroke-dashoffset: 0; stroke: #dd6b20; stroke-width: 1.9; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <!-- $O$ -->
+    <g style="fill: #1a202c" transform="translate(106.404169 262.391936)">
+     <text>
+      <tspan x="0" y="-0.34375" style="font-style: oblique; font-size: 13px; font-family: 'DejaVu Sans'; fill: #1a202c">O</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_2">
+    <!-- $\vec{e}_1$ -->
+    <g style="fill: #2b6cb0" transform="translate(151.713729 267.233458)">
+     <text>
+      <tspan x="8.108887" y="-2.125" style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #2b6cb0">⃗</tspan>
+      <tspan x="0" y="-0.5" style="font-style: oblique; font-size: 13px; font-family: 'DejaVu Sans'; fill: #2b6cb0">e</tspan>
+      <tspan x="8.122461" y="1.449994" style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #2b6cb0">1</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_3">
+    <!-- $2\vec{e}_1$ -->
+    <g style="fill: #2b6cb0" transform="translate(223.746814 267.233458)">
+     <text>
+      <tspan x="0" y="-0.5" style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #2b6cb0">2</tspan>
+      <tspan x="16.379883" y="-2.125" style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #2b6cb0">⃗</tspan>
+      <tspan x="8.270996" y="-0.5" style="font-style: oblique; font-size: 13px; font-family: 'DejaVu Sans'; fill: #2b6cb0">e</tspan>
+      <tspan x="16.393457" y="1.449994" style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #2b6cb0">1</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_4">
+    <!-- $\vec{e}_2$ -->
+    <g style="fill: #dd6b20" transform="translate(100.485085 215.80829)">
+     <text>
+      <tspan x="8.108887" y="-2.125" style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #dd6b20">⃗</tspan>
+      <tspan x="0" y="-0.5" style="font-style: oblique; font-size: 13px; font-family: 'DejaVu Sans'; fill: #dd6b20">e</tspan>
+      <tspan x="8.122461" y="1.449994" style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #dd6b20">2</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_5">
+    <!-- $3\vec{e}_2$ -->
+    <g style="fill: #dd6b20" transform="translate(92.165085 113.168019)">
+     <text>
+      <tspan x="0" y="-0.5" style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #dd6b20">3</tspan>
+      <tspan x="16.379883" y="-2.125" style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #dd6b20">⃗</tspan>
+      <tspan x="8.270996" y="-0.5" style="font-style: oblique; font-size: 13px; font-family: 'DejaVu Sans'; fill: #dd6b20">e</tspan>
+      <tspan x="16.393457" y="1.449994" style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #dd6b20">2</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_6">
+    <!-- $\vec{v}=2\vec{e}_1+3\vec{e}_2$ -->
+    <g style="fill: #1a202c" transform="translate(141.56 31.906956)">
+     <text>
+      <tspan x="8.649414" y="-2.171875" style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #1a202c">⃗</tspan>
+      <tspan x="11.012695" y="-0.59375" style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #1a202c">=</tspan>
+      <tspan x="25.470703" y="-0.59375" style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #1a202c">2</tspan>
+      <tspan x="43.109375" y="-2.359375" style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #1a202c">⃗</tspan>
+      <tspan x="52.470605" y="-0.59375" style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #1a202c">+</tspan>
+      <tspan x="66.928613" y="-0.59375" style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #1a202c">3</tspan>
+      <tspan x="84.567285" y="-2.359375" style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #1a202c">⃗</tspan>
+      <tspan x="0" y="-0.59375" style="font-style: oblique; font-size: 14px; font-family: 'DejaVu Sans'; fill: #1a202c">v</tspan>
+      <tspan x="34.37793" y="-0.59375" style="font-style: oblique; font-size: 14px; font-family: 'DejaVu Sans'; fill: #1a202c">e</tspan>
+      <tspan x="75.83584" y="-0.59375" style="font-style: oblique; font-size: 14px; font-family: 'DejaVu Sans'; fill: #1a202c">e</tspan>
+      <tspan x="43.125195" y="1.506243" style="font-size: 9.8px; font-family: 'DejaVu Sans'; fill: #1a202c">1</tspan>
+      <tspan x="84.583105" y="1.506243" style="font-size: 9.8px; font-family: 'DejaVu Sans'; fill: #1a202c">2</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="patch_5">
+    <path d="M 124.230508 244.958644 
+Q 155.715254 244.958644 184.963932 244.958644 
+" clip-path="url(#pe2c4134056)" style="fill: none; stroke: #2b6cb0; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 179.763932 242.358644 
+L 184.963932 244.958644 
+L 179.763932 247.558644 
+z
+" clip-path="url(#pe2c4134056)" style="fill: #2b6cb0; stroke: #2b6cb0; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 124.230508 244.958644 
+Q 124.230508 213.473898 124.230508 184.225221 
+" clip-path="url(#pe2c4134056)" style="fill: none; stroke: #dd6b20; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 121.630508 189.425221 
+L 124.230508 184.225221 
+L 126.830508 189.425221 
+z
+" clip-path="url(#pe2c4134056)" style="fill: #dd6b20; stroke: #dd6b20; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 124.230508 244.958644 
+Q 187.2 150.504407 248.433005 58.654899 
+" clip-path="url(#pe2c4134056)" style="fill: none; stroke: #1a202c; stroke-width: 2.8; stroke-linecap: round"/>
+    <path d="M 242.220363 62.20498 
+L 248.433005 58.654899 
+L 247.545485 65.755061 
+z
+" clip-path="url(#pe2c4134056)" style="fill: #1a202c; stroke: #1a202c; stroke-width: 2.8; stroke-linecap: round"/>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe2c4134056">
+   <rect x="83.300339" y="15.12" width="207.799322" height="260.064"/>
+  </clipPath>
+ </defs>
+</svg>
