@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="691.2pt" height="288pt" viewBox="0 0 691.2 288" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-08T20:46:16.681877</dc:date>
+    <dc:description>import numpy as np
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+from matplotlib.patches import FancyArrowPatch, Rectangle
+
+mpl.rcParams.update({
+    "font.family": "DejaVu Sans",
+    "font.size": 9,
+    "text.color": "#263238",
+    "figure.facecolor": "white",
+    "axes.facecolor": "white",
+    "svg.fonttype": "none",
+})
+
+blue = "#33658A"
+teal = "#2A9D8F"
+ochre = "#D4A72C"
+ink = "#263238"
+muted = "#657786"
+light = "#D8E0E3"
+
+x = np.array([1, 2, 3, 4])
+if x.size != 4:
+    raise ValueError("This recursion diagram requires the supplied four-point input.")
+e = np.fft.fft(x[::2])
+o = np.fft.fft(x[1::2])
+expected = np.array([10, -2 + 2j, -2, -2 - 2j])
+if not np.allclose(np.fft.fft(x), expected):
+    raise ValueError("The supplied input and FFT output are inconsistent.")
+
+fig = plt.figure(figsize=(9.6, 4), dpi=100)
+ax = fig.add_axes([0, 0, 1, 1])
+ax.set_xlim(0, 960)
+ax.set_ylim(0, 400)
+ax.axis("off")
+
+def text(x, y, s, size=9, color=ink, weight="normal",
+         ha="left", va="center", **kwargs):
+    return ax.text(
+        x, y, s, fontsize=size, color=color, weight=weight,
+        ha=ha, va=va, **kwargs
+    )
+
+def arrow(start, end, color=muted, lw=1.15, style="-|&gt;", alpha=1):
+    patch = FancyArrowPatch(
+        start, end, arrowstyle=style, mutation_scale=8,
+        linewidth=lw, color=color, shrinkA=0, shrinkB=0,
+        alpha=alpha, zorder=1
+    )
+    ax.add_patch(patch)
+    return patch
+
+text(26, 374, "Recursive FFT in Rust", size=16, weight="bold")
+text(933, 374, "fft(&amp;[1, 2, 3, 4])   ·   N = 4",
+     size=10, ha="right", color=muted)
+
+text(26, 338, "1  Split by index parity", size=10.5, weight="bold")
+text(245, 309, "x = [1, 2, 3, 4]", size=11, ha="center", weight="bold")
+
+arrow((210, 297), (135, 281), blue)
+arrow((280, 297), (355, 281), teal)
+
+text(130, 269, "even = [x[0], x[2]]", color=blue, ha="center")
+text(130, 251, "= [1, 3]", size=10, color=blue, ha="center", weight="bold")
+text(355, 269, "odd = [x[1], x[3]]", color=teal, ha="center")
+text(355, 251, "= [2, 4]", size=10, color=teal, ha="center", weight="bold")
+
+text(26, 223, "2  Recursive 2-point FFT calls", size=10.5, weight="bold",
+     bbox=dict(facecolor="white", edgecolor="none", pad=2))
+text(465, 223, "N = 1: return input", size=8, color=muted, ha="right")
+
+for center, color in [(130, blue), (355, teal)]:
+    arrow((center - 15, 241), (center - 44, 196), color, alpha=0.65)
+    arrow((center + 15, 241), (center + 44, 196), color, alpha=0.65)
+
+for xpos, val, color in [
+    (86, 1, blue), (174, 3, blue),
+    (311, 2, teal), (399, 4, teal)
+]:
+    text(xpos, 185, f"[{val}]", size=10, ha="center", color=color,
+         bbox=dict(facecolor="white", edgecolor="none", pad=2))
+
+for center, color in [(130, blue), (355, teal)]:
+    arrow((center - 40, 174), (center - 10, 160), color, alpha=0.65)
+    arrow((center + 40, 174), (center + 10, 160), color, alpha=0.65)
+
+text(130, 154, "e = fft(&amp;[1, 3])", color=blue, ha="center", weight="bold")
+text(355, 154, "o = fft(&amp;[2, 4])", color=teal, ha="center", weight="bold")
+text(130, 136, "k = 0,  w = 1", size=8.5, color=muted, ha="center")
+text(355, 136, "k = 0,  w = 1", size=8.5, color=muted, ha="center")
+text(130, 117, "e[0] = 1 + 3 = 4", ha="center")
+text(130, 100, "e[1] = 1 − 3 = −2", ha="center")
+text(355, 117, "o[0] = 2 + 4 = 6", ha="center")
+text(355, 100, "o[1] = 2 − 4 = −2", ha="center")
+text(130, 78, "e = [4, −2]", color=blue, size=10, ha="center", weight="bold")
+text(355, 78, "o = [6, −2]", color=teal, size=10, ha="center", weight="bold")
+
+text(511, 338, "3  Butterfly loop", size=10.5, weight="bold")
+text(933, 338, "k = 0..2  (0, 1)", size=9, color=muted, ha="right")
+text(511, 316, "out[k] = e[k] + p;   out[k + 2] = e[k] − p",
+     size=8.8, color=muted)
+
+def butterfly(y, k, even_value, product, upper, lower):
+    x_start, x_end = 606, 704
+    upper_y, lower_y = y, y - 31
+    text(597, upper_y, f"e[{k}] = {even_value}",
+         size=8.5, ha="right", color=blue)
+    text(597, lower_y, f"p = {product}",
+         size=8.5, ha="right", color=ink)
+    arrow((x_start, upper_y), (x_end, upper_y), muted, lw=1.05)
+    arrow((x_start, lower_y), (x_end, lower_y), muted, lw=1.05)
+    arrow((x_start, upper_y), (x_end, lower_y), muted, lw=1.05, alpha=0.65)
+    arrow((x_start, lower_y), (x_end, upper_y), muted, lw=1.05, alpha=0.65)
+    text(714, upper_y, "+", size=10, ha="center", weight="bold")
+    text(714, lower_y, "−", size=10, ha="center", weight="bold")
+    text(731, upper_y, upper, size=8.8)
+    text(731, lower_y, lower, size=8.8)
+
+text(511, 286, "k = 0     θ = 0,  w = 1", size=9.5, weight="bold")
+text(511, 265, "p = 1 × 6 = 6", size=9.5,
+     bbox=dict(facecolor="#F8F0D9", edgecolor="none", pad=3))
+butterfly(241, 0, "4", "6",
+          "out[0] = 4 + 6 = 10",
+          "out[2] = 4 − 6 = −2")
+
+text(511, 181, "k = 1     θ = −π/2,  w = −i", size=9.5, weight="bold")
+text(511, 160, "p = (−i) × (−2) = 2i", size=9.5,
+     bbox=dict(facecolor="#F8F0D9", edgecolor="none", pad=3))
+butterfly(136, 1, "−2", "2i",
+          "out[1] = −2 + 2i",
+          "out[3] = −2 − 2i")
+
+ax.add_patch(Rectangle((26, 15), 907, 42,
+                       facecolor="#F0F5F6", edgecolor="none"))
+text(44, 36, "Final output", size=10, weight="bold")
+text(480, 36, "[10,  −2 + 2i,  −2,  −2 − 2i]",
+     size=12, ha="center", weight="bold")
+text(916, 36, "Forward FFT", size=8.5, ha="right", color=muted)</dc:description>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>dendron</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 288 
+L 691.2 288 
+L 691.2 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 151.2 74.16 
+Q 124.2 79.92 98.457444 85.411745 
+" clip-path="url(#pc45666dd8a)" style="fill: none; stroke: #33658a; stroke-width: 1.15; stroke-linecap: round"/>
+    <path d="M 101.920842 86.308891 
+L 98.457444 85.411745 
+L 101.253199 83.179314 
+z
+" clip-path="url(#pc45666dd8a)" style="fill: #33658a; stroke: #33658a; stroke-width: 1.15; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 201.6 74.16 
+Q 228.6 79.92 254.342556 85.411745 
+" clip-path="url(#pc45666dd8a)" style="fill: none; stroke: #2a9d8f; stroke-width: 1.15; stroke-linecap: round"/>
+    <path d="M 251.546801 83.179314 
+L 254.342556 85.411745 
+L 250.879158 86.308891 
+z
+" clip-path="url(#pc45666dd8a)" style="fill: #2a9d8f; stroke: #2a9d8f; stroke-width: 1.15; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 82.8 114.48 
+Q 72.36 130.68 62.616487 145.799245 
+" clip-path="url(#pc45666dd8a)" style="fill: none; opacity: 0.65; stroke: #33658a; stroke-width: 1.15; stroke-linecap: round"/>
+    <path d="M 65.694845 143.97614 
+L 62.616487 145.799245 
+L 63.005017 142.242696 
+z
+" clip-path="url(#pc45666dd8a)" style="fill: #33658a; opacity: 0.65; stroke: #33658a; stroke-width: 1.15; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 104.4 114.48 
+Q 114.84 130.68 124.583513 145.799245 
+" clip-path="url(#pc45666dd8a)" style="fill: none; opacity: 0.65; stroke: #33658a; stroke-width: 1.15; stroke-linecap: round"/>
+    <path d="M 124.194983 142.242696 
+L 124.583513 145.799245 
+L 121.505155 143.97614 
+z
+" clip-path="url(#pc45666dd8a)" style="fill: #33658a; opacity: 0.65; stroke: #33658a; stroke-width: 1.15; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 244.8 114.48 
+Q 234.36 130.68 224.616487 145.799245 
+" clip-path="url(#pc45666dd8a)" style="fill: none; opacity: 0.65; stroke: #2a9d8f; stroke-width: 1.15; stroke-linecap: round"/>
+    <path d="M 227.694845 143.97614 
+L 224.616487 145.799245 
+L 225.005017 142.242696 
+z
+" clip-path="url(#pc45666dd8a)" style="fill: #2a9d8f; opacity: 0.65; stroke: #2a9d8f; stroke-width: 1.15; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 266.4 114.48 
+Q 276.84 130.68 286.583513 145.799245 
+" clip-path="url(#pc45666dd8a)" style="fill: none; opacity: 0.65; stroke: #2a9d8f; stroke-width: 1.15; stroke-linecap: round"/>
+    <path d="M 286.194983 142.242696 
+L 286.583513 145.799245 
+L 283.505155 143.97614 
+z
+" clip-path="url(#pc45666dd8a)" style="fill: #2a9d8f; opacity: 0.65; stroke: #2a9d8f; stroke-width: 1.15; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 64.8 162.72 
+Q 75.6 167.76 85.234885 172.25628 
+" clip-path="url(#pc45666dd8a)" style="fill: none; opacity: 0.65; stroke: #33658a; stroke-width: 1.15; stroke-linecap: round"/>
+    <path d="M 83.011716 169.453153 
+L 85.234885 172.25628 
+L 81.658482 172.352939 
+z
+" clip-path="url(#pc45666dd8a)" style="fill: #33658a; opacity: 0.65; stroke: #33658a; stroke-width: 1.15; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 122.4 162.72 
+Q 111.6 167.76 101.965115 172.25628 
+" clip-path="url(#pc45666dd8a)" style="fill: none; opacity: 0.65; stroke: #33658a; stroke-width: 1.15; stroke-linecap: round"/>
+    <path d="M 105.541518 172.352939 
+L 101.965115 172.25628 
+L 104.188284 169.453153 
+z
+" clip-path="url(#pc45666dd8a)" style="fill: #33658a; opacity: 0.65; stroke: #33658a; stroke-width: 1.15; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 226.8 162.72 
+Q 237.6 167.76 247.234885 172.25628 
+" clip-path="url(#pc45666dd8a)" style="fill: none; opacity: 0.65; stroke: #2a9d8f; stroke-width: 1.15; stroke-linecap: round"/>
+    <path d="M 245.011716 169.453153 
+L 247.234885 172.25628 
+L 243.658482 172.352939 
+z
+" clip-path="url(#pc45666dd8a)" style="fill: #2a9d8f; opacity: 0.65; stroke: #2a9d8f; stroke-width: 1.15; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 284.4 162.72 
+Q 273.6 167.76 263.965115 172.25628 
+" clip-path="url(#pc45666dd8a)" style="fill: none; opacity: 0.65; stroke: #2a9d8f; stroke-width: 1.15; stroke-linecap: round"/>
+    <path d="M 267.541518 172.352939 
+L 263.965115 172.25628 
+L 266.188284 169.453153 
+z
+" clip-path="url(#pc45666dd8a)" style="fill: #2a9d8f; opacity: 0.65; stroke: #2a9d8f; stroke-width: 1.15; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 436.32 114.48 
+Q 471.6 114.48 505.706064 114.48 
+" clip-path="url(#pc45666dd8a)" style="fill: none; stroke: #657786; stroke-width: 1.05; stroke-linecap: round"/>
+    <path d="M 502.506064 112.88 
+L 505.706064 114.48 
+L 502.506064 116.08 
+z
+" clip-path="url(#pc45666dd8a)" style="fill: #657786; stroke: #657786; stroke-width: 1.05; stroke-linecap: round"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 436.32 136.8 
+Q 471.6 136.8 505.706064 136.8 
+" clip-path="url(#pc45666dd8a)" style="fill: none; stroke: #657786; stroke-width: 1.05; stroke-linecap: round"/>
+    <path d="M 502.506064 135.2 
+L 505.706064 136.8 
+L 502.506064 138.4 
+z
+" clip-path="url(#pc45666dd8a)" style="fill: #657786; stroke: #657786; stroke-width: 1.05; stroke-linecap: round"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 436.32 114.48 
+Q 471.6 125.64 505.760728 136.445945 
+" clip-path="url(#pc45666dd8a)" style="fill: none; opacity: 0.65; stroke: #657786; stroke-width: 1.05; stroke-linecap: round"/>
+    <path d="M 503.192289 133.955338 
+L 505.760728 136.445945 
+L 502.227179 137.006331 
+z
+" clip-path="url(#pc45666dd8a)" style="fill: #657786; opacity: 0.65; stroke: #657786; stroke-width: 1.05; stroke-linecap: round"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 436.32 136.8 
+Q 471.6 125.64 505.760728 114.834055 
+" clip-path="url(#pc45666dd8a)" style="fill: none; opacity: 0.65; stroke: #657786; stroke-width: 1.05; stroke-linecap: round"/>
+    <path d="M 502.227179 114.273669 
+L 505.760728 114.834055 
+L 503.192289 117.324662 
+z
+" clip-path="url(#pc45666dd8a)" style="fill: #657786; opacity: 0.65; stroke: #657786; stroke-width: 1.05; stroke-linecap: round"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 436.32 190.08 
+Q 471.6 190.08 505.706064 190.08 
+" clip-path="url(#pc45666dd8a)" style="fill: none; stroke: #657786; stroke-width: 1.05; stroke-linecap: round"/>
+    <path d="M 502.506064 188.48 
+L 505.706064 190.08 
+L 502.506064 191.68 
+z
+" clip-path="url(#pc45666dd8a)" style="fill: #657786; stroke: #657786; stroke-width: 1.05; stroke-linecap: round"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 436.32 212.4 
+Q 471.6 212.4 505.706064 212.4 
+" clip-path="url(#pc45666dd8a)" style="fill: none; stroke: #657786; stroke-width: 1.05; stroke-linecap: round"/>
+    <path d="M 502.506064 210.8 
+L 505.706064 212.4 
+L 502.506064 214 
+z
+" clip-path="url(#pc45666dd8a)" style="fill: #657786; stroke: #657786; stroke-width: 1.05; stroke-linecap: round"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 436.32 190.08 
+Q 471.6 201.24 505.760728 212.045945 
+" clip-path="url(#pc45666dd8a)" style="fill: none; opacity: 0.65; stroke: #657786; stroke-width: 1.05; stroke-linecap: round"/>
+    <path d="M 503.192289 209.555338 
+L 505.760728 212.045945 
+L 502.227179 212.606331 
+z
+" clip-path="url(#pc45666dd8a)" style="fill: #657786; opacity: 0.65; stroke: #657786; stroke-width: 1.05; stroke-linecap: round"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 436.32 212.4 
+Q 471.6 201.24 505.760728 190.434055 
+" clip-path="url(#pc45666dd8a)" style="fill: none; opacity: 0.65; stroke: #657786; stroke-width: 1.05; stroke-linecap: round"/>
+    <path d="M 502.227179 189.873669 
+L 505.760728 190.434055 
+L 503.192289 192.924662 
+z
+" clip-path="url(#pc45666dd8a)" style="fill: #657786; opacity: 0.65; stroke: #657786; stroke-width: 1.05; stroke-linecap: round"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 18.72 277.2 
+L 671.76 277.2 
+L 671.76 246.96 
+L 18.72 246.96 
+z
+" clip-path="url(#pc45666dd8a)" style="fill: #f0f5f6"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263238" x="18.72" y="22.876875" transform="rotate(-0 18.72 22.876875)">Recursive FFT in Rust</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #657786" x="671.76" y="21.318047" transform="rotate(-0 671.76 21.318047)">fft(&amp;[1, 2, 3, 4])   ·   N = 4</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263238" x="18.72" y="47.367949" transform="rotate(-0 18.72 47.367949)">1  Split by index parity</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263238" x="176.4" y="68.377852" transform="rotate(-0 176.4 68.377852)">x = [1, 2, 3, 4]</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #33658a" x="93.6" y="96.658242" transform="rotate(-0 93.6 96.658242)">even = [x[0], x[2]]</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #33658a" x="93.6" y="109.878047" transform="rotate(-0 93.6 109.878047)">= [1, 3]</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #2a9d8f" x="255.6" y="96.658242" transform="rotate(-0 255.6 96.658242)">odd = [x[1], x[3]]</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #2a9d8f" x="255.6" y="109.878047" transform="rotate(-0 255.6 109.878047)">= [2, 4]</text>
+   </g>
+   <g id="text_9">
+    <g id="patch_21">
+     <path d="M 16.725 134.68541 
+L 194.949375 134.68541 
+L 194.949375 120.19459 
+L 16.725 120.19459 
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263238" x="18.72" y="130.167949" transform="rotate(-0 18.72 130.167949)">2  Recursive 2-point FFT calls</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #657786" x="334.8" y="129.518438" transform="rotate(-0 334.8 129.518438)">N = 1: return input</text>
+   </g>
+   <g id="text_11">
+    <g id="patch_22">
+     <path d="M 52.837187 161.800391 
+L 71.002812 161.800391 
+L 71.002812 147.799609 
+L 52.837187 147.799609 
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #33658a" x="61.92" y="157.398047" transform="rotate(-0 61.92 157.398047)">[1]</text>
+   </g>
+   <g id="text_12">
+    <g id="patch_23">
+     <path d="M 116.197187 161.800391 
+L 134.362812 161.800391 
+L 134.362812 147.799609 
+L 116.197187 147.799609 
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #33658a" x="125.28" y="157.398047" transform="rotate(-0 125.28 157.398047)">[3]</text>
+   </g>
+   <g id="text_13">
+    <g id="patch_24">
+     <path d="M 214.837187 161.800391 
+L 233.002813 161.800391 
+L 233.002813 147.799609 
+L 214.837187 147.799609 
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #2a9d8f" x="223.92" y="157.398047" transform="rotate(-0 223.92 157.398047)">[2]</text>
+   </g>
+   <g id="text_14">
+    <g id="patch_25">
+     <path d="M 278.197187 161.800391 
+L 296.362812 161.800391 
+L 296.362812 147.799609 
+L 278.197187 147.799609 
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #2a9d8f" x="287.28" y="157.398047" transform="rotate(-0 287.28 157.398047)">[4]</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #33658a" x="93.6" y="179.458242" transform="rotate(-0 93.6 179.458242)">e = fft(&amp;[1, 3])</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #2a9d8f" x="255.6" y="179.458242" transform="rotate(-0 255.6 179.458242)">o = fft(&amp;[2, 4])</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #657786" x="93.6" y="192.28834" transform="rotate(-0 93.6 192.28834)">k = 0,  w = 1</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #657786" x="255.6" y="192.28834" transform="rotate(-0 255.6 192.28834)">k = 0,  w = 1</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263238" x="93.6" y="206.098242" transform="rotate(-0 93.6 206.098242)">e[0] = 1 + 3 = 4</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263238" x="93.6" y="218.338242" transform="rotate(-0 93.6 218.338242)">e[1] = 1 − 3 = −2</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263238" x="255.6" y="206.098242" transform="rotate(-0 255.6 206.098242)">o[0] = 2 + 4 = 6</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263238" x="255.6" y="218.338242" transform="rotate(-0 255.6 218.338242)">o[1] = 2 − 4 = −2</text>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #33658a" x="93.6" y="234.438047" transform="rotate(-0 93.6 234.438047)">e = [4, −2]</text>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #2a9d8f" x="255.6" y="234.438047" transform="rotate(-0 255.6 234.438047)">o = [6, −2]</text>
+   </g>
+   <g id="text_25">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263238" x="367.92" y="47.367949" transform="rotate(-0 367.92 47.367949)">3  Butterfly loop</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #657786" x="671.76" y="46.978242" transform="rotate(-0 671.76 46.978242)">k = 0..2  (0, 1)</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 8.8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #657786" x="367.92" y="62.766281" transform="rotate(-0 367.92 62.766281)">out[k] = e[k] + p;   out[k + 2] = e[k] − p</text>
+   </g>
+   <g id="text_28">
+    <text style="font-weight: 700; font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263238" x="367.92" y="84.585254" transform="rotate(-0 367.92 84.585254)">k = 0     θ = 0,  w = 1</text>
+   </g>
+   <g id="text_29">
+    <g id="patch_26">
+     <path d="M 364.88 104.99 
+L 437.121562 104.99 
+L 437.121562 89.41 
+L 364.88 89.41 
+z
+" style="fill: #f8f0d9"/>
+    </g>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263238" x="367.92" y="99.667773" transform="rotate(-0 367.92 99.667773)">p = 1 × 6 = 6</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #33658a" x="429.84" y="116.68834" transform="rotate(-0 429.84 116.68834)">e[0] = 4</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #263238" x="429.84" y="139.008008" transform="rotate(-0 429.84 139.008008)">p = 6</text>
+   </g>
+   <g id="text_32">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263238" x="514.08" y="117.077656" transform="rotate(-0 514.08 117.077656)">+</text>
+   </g>
+   <g id="text_33">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263238" x="514.08" y="139.397656" transform="rotate(-0 514.08 139.397656)">−</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 8.8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263238" x="526.32" y="116.766281" transform="rotate(-0 526.32 116.766281)">out[0] = 4 + 6 = 10</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 8.8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263238" x="526.32" y="139.086281" transform="rotate(-0 526.32 139.086281)">out[2] = 4 − 6 = −2</text>
+   </g>
+   <g id="text_36">
+    <text style="font-weight: 700; font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263238" x="367.92" y="160.185254" transform="rotate(-0 367.92 160.185254)">k = 1     θ = −π/2,  w = −i</text>
+   </g>
+   <g id="text_37">
+    <g id="patch_27">
+     <path d="M 364.88 180.590371 
+L 467.102969 180.590371 
+L 467.102969 165.009629 
+L 364.88 165.009629 
+z
+" style="fill: #f8f0d9"/>
+    </g>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263238" x="367.92" y="175.268145" transform="rotate(-0 367.92 175.268145)">p = (−i) × (−2) = 2i</text>
+   </g>
+   <g id="text_38">
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #33658a" x="429.84" y="192.28834" transform="rotate(-0 429.84 192.28834)">e[1] = −2</text>
+   </g>
+   <g id="text_39">
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #263238" x="429.84" y="214.60834" transform="rotate(-0 429.84 214.60834)">p = 2i</text>
+   </g>
+   <g id="text_40">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263238" x="514.08" y="192.677656" transform="rotate(-0 514.08 192.677656)">+</text>
+   </g>
+   <g id="text_41">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263238" x="514.08" y="214.997656" transform="rotate(-0 514.08 214.997656)">−</text>
+   </g>
+   <g id="text_42">
+    <text style="font-size: 8.8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263238" x="526.32" y="192.366281" transform="rotate(-0 526.32 192.366281)">out[1] = −2 + 2i</text>
+   </g>
+   <g id="text_43">
+    <text style="font-size: 8.8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263238" x="526.32" y="214.686281" transform="rotate(-0 526.32 214.686281)">out[3] = −2 − 2i</text>
+   </g>
+   <g id="text_44">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263238" x="31.68" y="264.678047" transform="rotate(-0 31.68 264.678047)">Final output</text>
+   </g>
+   <g id="text_45">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263238" x="345.6" y="265.197656" transform="rotate(-0 345.6 265.197656)">[10,  −2 + 2i,  −2,  −2 − 2i]</text>
+   </g>
+   <g id="text_46">
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #657786" x="659.52" y="264.28834" transform="rotate(-0 659.52 264.28834)">Forward FFT</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pc45666dd8a">
+   <rect x="0" y="0" width="691.2" height="288"/>
+  </clipPath>
+ </defs>
+</svg>
