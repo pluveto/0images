@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="691.2pt" height="273.6pt" viewBox="0 0 691.2 273.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-08T20:41:54.654400</dc:date>
+    <dc:description>import matplotlib as mpl
+import matplotlib.pyplot as plt
+from matplotlib.patches import Rectangle
+from matplotlib.font_manager import FontProperties
+
+mpl.rcParams.update({
+    "font.family": "DejaVu Sans",
+    "font.size": 10,
+    "text.color": "#263238",
+    "figure.facecolor": "white",
+    "axes.facecolor": "white",
+    "svg.fonttype": "none",
+})
+
+BLUE = "#33658A"
+TEAL = "#2A9D8F"
+TERRACOTTA = "#C66B4E"
+INK = "#263238"
+
+fig = plt.figure(figsize=(9.6, 3.8), dpi=100)
+ax = fig.add_axes([0, 0, 1, 1])
+ax.set_xlim(0, 960)
+ax.set_ylim(380, 0)
+ax.set_axis_off()
+
+sans = FontProperties(family="DejaVu Sans")
+mono = FontProperties(family="DejaVu Sans Mono")
+
+
+def text(x, y, s, size=10, color=INK, weight="normal",
+         family="sans", ha="left", va="center"):
+    return ax.text(
+        x, y, s, fontsize=size, color=color,
+        fontproperties=mono if family == "mono" else sans,
+        fontweight=weight, ha=ha, va=va,
+    )
+
+
+# Panel headings and a single quiet divider.
+text(30, 30, "Memory Layout:", size=13, weight="bold")
+text(490, 30, "Core Butterfly Arithmetic Operations", size=13, weight="bold")
+ax.plot([457, 457], [24, 354], color="#E5EAE8", linewidth=0.9)
+
+text(30, 65, "struct Complex { re: f64, im: f64 }",
+     size=10.5, family="mono")
+
+# Contiguous field diagram: two equal, adjacent 8-byte regions.
+x0, y0, field_w, field_h = 30, 118, 195, 70
+ax.add_patch(Rectangle((x0, y0), field_w, field_h,
+                       facecolor=BLUE, edgecolor="none"))
+ax.add_patch(Rectangle((x0 + field_w, y0), field_w, field_h,
+                       facecolor=TEAL, edgecolor="none"))
+
+text(30, 99, "Byte offset", size=8.5)
+for x, label in [(30, "0"), (225, "8"), (420, "16")]:
+    text(x, 207, label, size=9, ha="center")
+    ax.plot([x, x], [190, 195], color=INK, linewidth=0.7)
+
+text(127.5, 141, "re: f64", size=12, color="white",
+     family="mono", ha="center")
+text(127.5, 166, "real part · 64 bits", size=9, color="white", ha="center")
+text(322.5, 141, "im: f64", size=12, color="white",
+     family="mono", ha="center")
+text(322.5, 166, "imaginary part · 64 bits",
+     size=9, color="white", ha="center")
+text(225, 231, "16 bytes total · 8 bytes per field", size=9.5, ha="center")
+
+# Unit-circle constructor, retaining the Rust field expressions.
+text(30, 272, "Unit-circle constructor", size=11, weight="bold")
+text(30, 302, "Complex::from_polar_unit(theta)", size=10, family="mono")
+text(30, 327, "-&gt; { re: theta.cos(),", size=10, family="mono")
+text(30, 350, "     im: theta.sin() }", size=10, family="mono")
+
+# Arithmetic formulas are displayed as Rust-like scalar expressions.
+text(490, 77, "1  Addition (a + b)", size=11, weight="bold")
+text(508, 103, "re = a.re + b.re", family="mono")
+text(508, 125, "im = a.im + b.im", family="mono")
+
+text(490, 162, "2  Subtraction (a - b)", size=11, weight="bold")
+text(508, 188, "re = a.re - b.re", family="mono")
+text(508, 210, "im = a.im - b.im", family="mono")
+
+text(490, 247, "3  Multiplication (a * b)", size=11, weight="bold")
+text(508, 273, "(a.re + i a.im)(b.re + i b.im)", family="mono")
+
+# Position separately colored tokens using the actual font metrics.
+fig.canvas.draw()
+renderer = fig.canvas.get_renderer()
+code_font = FontProperties(family="DejaVu Sans Mono", size=10)
+
+
+def colored_code(x, y, segments):
+    cursor = x
+    for string, color in segments:
+        text(cursor, y, string, family="mono", color=color)
+        width, _, _ = renderer.get_text_width_height_descent(
+            string, code_font, ismath=False
+        )
+        cursor += width * 960 / fig.bbox.width
+
+
+colored_code(508, 299, [
+    ("re = a.re * b.re ", INK),
+    ("-", TERRACOTTA),
+    (" a.im * b.im", INK),
+])
+text(508, 322, "im = a.re * b.im + a.im * b.re", family="mono")
+text(508, 350, r"Minus sign follows from $i^2 = -1$",
+     size=9, color=TERRACOTTA)</dc:description>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>dendron</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 273.6 
+L 691.2 273.6 
+L 691.2 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 21.6 84.96 
+L 162 84.96 
+L 162 135.36 
+L 21.6 135.36 
+z
+" clip-path="url(#pbf13566771)" style="fill: #33658a"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 162 84.96 
+L 302.4 84.96 
+L 302.4 135.36 
+L 162 135.36 
+z
+" clip-path="url(#pbf13566771)" style="fill: #2a9d8f"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 329.04 17.28 
+L 329.04 254.88 
+" clip-path="url(#pbf13566771)" style="fill: none; stroke: #e5eae8; stroke-width: 0.9; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 21.6 136.8 
+L 21.6 140.4 
+" clip-path="url(#pbf13566771)" style="fill: none; stroke: #263238; stroke-width: 0.7; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 162 136.8 
+L 162 140.4 
+" clip-path="url(#pbf13566771)" style="fill: none; stroke: #263238; stroke-width: 0.7; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 302.4 136.8 
+L 302.4 140.4 
+" clip-path="url(#pbf13566771)" style="fill: none; stroke: #263238; stroke-width: 0.7; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263238" x="21.6" y="24.976953" transform="rotate(-0 21.6 24.976953)">Memory Layout:</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263238" x="352.8" y="24.977461" transform="rotate(-0 352.8 24.977461)">Core Butterfly Arithmetic Operations</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans Mono'; text-anchor: start; fill: #263238" x="21.6" y="49.55584" transform="rotate(-0 21.6 49.55584)">struct Complex { re: f64, im: f64 }</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263238" x="21.6" y="73.48834" transform="rotate(-0 21.6 73.48834)">Byte offset</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263238" x="21.6" y="151.377891" transform="rotate(-0 21.6 151.377891)">0</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263238" x="162" y="151.377891" transform="rotate(-0 162 151.377891)">8</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263238" x="302.4" y="151.377891" transform="rotate(-0 302.4 151.377891)">16</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans Mono'; text-anchor: middle; fill: #ffffff" x="91.8" y="104.637656" transform="rotate(-0 91.8 104.637656)">re: f64</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="91.8" y="121.858242" transform="rotate(-0 91.8 121.858242)">real part · 64 bits</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans Mono'; text-anchor: middle; fill: #ffffff" x="232.2" y="104.637656" transform="rotate(-0 232.2 104.637656)">im: f64</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="232.2" y="121.858242" transform="rotate(-0 232.2 121.858242)">imaginary part · 64 bits</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263238" x="162" y="168.788145" transform="rotate(-0 162 168.788145)">16 bytes total · 8 bytes per field</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263238" x="21.6" y="198.697852" transform="rotate(-0 21.6 198.697852)">Unit-circle constructor</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans Mono'; text-anchor: start; fill: #263238" x="21.6" y="220.064609" transform="rotate(-0 21.6 220.064609)">Complex::from_polar_unit(theta)</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans Mono'; text-anchor: start; fill: #263238" x="21.6" y="238.038047" transform="rotate(-0 21.6 238.038047)">-&gt; { re: theta.cos(),</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans Mono'; text-anchor: start; fill: #263238" x="21.6" y="254.598047" transform="rotate(-0 21.6 254.598047)">     im: theta.sin() }</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263238" x="352.8" y="58.297852" transform="rotate(-0 352.8 58.297852)">1  Addition (a + b)</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans Mono'; text-anchor: start; fill: #263238" x="365.76" y="76.758047" transform="rotate(-0 365.76 76.758047)">re = a.re + b.re</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans Mono'; text-anchor: start; fill: #263238" x="365.76" y="92.598047" transform="rotate(-0 365.76 92.598047)">im = a.im + b.im</text>
+   </g>
+   <g id="text_20">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263238" x="352.8" y="119.497852" transform="rotate(-0 352.8 119.497852)">2  Subtraction (a - b)</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans Mono'; text-anchor: start; fill: #263238" x="365.76" y="137.958047" transform="rotate(-0 365.76 137.958047)">re = a.re - b.re</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans Mono'; text-anchor: start; fill: #263238" x="365.76" y="153.798047" transform="rotate(-0 365.76 153.798047)">im = a.im - b.im</text>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263238" x="352.8" y="180.697852" transform="rotate(-0 352.8 180.697852)">3  Multiplication (a * b)</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans Mono'; text-anchor: start; fill: #263238" x="365.76" y="199.158047" transform="rotate(-0 365.76 199.158047)">(a.re + i a.im)(b.re + i b.im)</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans Mono'; text-anchor: start; fill: #263238" x="365.76" y="217.878047" transform="rotate(-0 365.76 217.878047)">re = a.re * b.re </text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans Mono'; text-anchor: start; fill: #c66b4e" x="463.68" y="217.877656" transform="rotate(-0 463.68 217.877656)">-</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans Mono'; text-anchor: start; fill: #263238" x="469.44" y="217.878047" transform="rotate(-0 469.44 217.878047)"> a.im * b.im</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans Mono'; text-anchor: start; fill: #263238" x="365.76" y="234.438047" transform="rotate(-0 365.76 234.438047)">im = a.re * b.im + a.im * b.re</text>
+   </g>
+   <g id="text_29">
+    <!-- Minus sign follows from $i^2 = -1$ -->
+    <g style="fill: #c66b4e" transform="translate(365.76 255.148945)">
+     <text>
+      <tspan x="0" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e">M</tspan>
+      <tspan x="7.765137" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e">i</tspan>
+      <tspan x="10.265625" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e">n</tspan>
+      <tspan x="15.969727" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e">u</tspan>
+      <tspan x="21.673828" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e">s</tspan>
+      <tspan x="26.362793" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e"> </tspan>
+      <tspan x="29.223633" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e">s</tspan>
+      <tspan x="33.912598" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e">i</tspan>
+      <tspan x="36.413086" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e">g</tspan>
+      <tspan x="42.125977" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e">n</tspan>
+      <tspan x="47.830078" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e"> </tspan>
+      <tspan x="50.690918" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e">f</tspan>
+      <tspan x="53.859375" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e">o</tspan>
+      <tspan x="59.365723" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e">l</tspan>
+      <tspan x="61.866211" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e">l</tspan>
+      <tspan x="64.366699" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e">o</tspan>
+      <tspan x="69.873047" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e">w</tspan>
+      <tspan x="77.233887" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e">s</tspan>
+      <tspan x="81.922852" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e"> </tspan>
+      <tspan x="84.783691" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e">f</tspan>
+      <tspan x="87.952148" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e">r</tspan>
+      <tspan x="91.652344" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e">o</tspan>
+      <tspan x="97.158691" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e">m</tspan>
+      <tspan x="105.925781" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e"> </tspan>
+      <tspan x="117.965889" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e">=</tspan>
+      <tspan x="127.260322" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e">−</tspan>
+      <tspan x="134.801338" y="-0.60175" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e">1</tspan>
+      <tspan x="108.786621" y="-0.60175" style="font-style: oblique; font-size: 9px; font-family: 'DejaVu Sans'; fill: #c66b4e">i</tspan>
+      <tspan x="111.958125" y="-4.31875" style="font-size: 6.3px; font-family: 'DejaVu Sans'; fill: #c66b4e">2</tspan>
+     </text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pbf13566771">
+   <rect x="0" y="0" width="691.2" height="273.6"/>
+  </clipPath>
+ </defs>
+</svg>
